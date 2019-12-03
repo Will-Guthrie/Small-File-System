@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o  -o COMP_310_File_System 
