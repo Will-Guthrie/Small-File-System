@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o  -o COMP_310_File_System 
+/usr/bin/cc -g   CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o  -o COMP_310_File_System 

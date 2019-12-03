@@ -418,15 +418,14 @@ int sfs_fwrite(int fileID, char *buf, int length) {
 
     if (inode_to_write == -1) {return -1;}  // file not in fd_table
 
-    //TODO: Deviation
-    int required_bytes = inode_table[inode_to_write].file_size + length;
+    int required_bytes = fd_table[fileID].w_ptr + length;
     if (required_bytes > MAX_FILE_SIZE) {
         required_bytes = MAX_FILE_SIZE;
-        bytes_to_write = MAX_FILE_SIZE - inode_table[inode_to_write].file_size;
+        bytes_to_write = MAX_FILE_SIZE - fd_table[fileID].w_ptr;
     }
 
     int blocks_needed = required_bytes / BLOCK_SIZE;
-    if (required_bytes % BLOCK_SIZE != 0) required_bytes++;
+    if (required_bytes % BLOCK_SIZE != 0) { blocks_needed++; }
 
     int blocks_to_add = blocks_needed - inode_table[inode_to_write].link_cnt;
 
@@ -445,6 +444,9 @@ int sfs_fwrite(int fileID, char *buf, int length) {
                 SetBit(block_bitmap, i);
                 break;
             }
+        }
+        if (indirect_ptr == -1) {
+            return -1;
         }
         inode_table[inode_to_write].indirect_ptr = indirect_ptr;
     }
@@ -481,16 +483,18 @@ int sfs_fwrite(int fileID, char *buf, int length) {
 
     // Load file with extra space for write
     buffer = malloc(BLOCK_SIZE * blocks_needed);
-    //TODO: Small diff
-    for (int i = starting_block; i < blocks_needed; i++) {
+
+    for (int i = starting_block; i < inode_table[inode_to_write].link_cnt && i < blocks_needed; i++) {
         if (i >= 12) {
-            read_blocks(indirect_block[i - 12], 1, (buffer + (i-starting_block) * BLOCK_SIZE));
+            read_blocks(indirect_block[i - 12], 1, (buffer + (i - starting_block) * BLOCK_SIZE));
         } else {
-            read_blocks(inode_table[inode_to_write].direct_ptrs[i], 1, (buffer + (i-starting_block) * BLOCK_SIZE));
+            read_blocks(inode_table[inode_to_write].direct_ptrs[i], 1, (buffer + (i - starting_block) * BLOCK_SIZE));
         }
     }
 
     memcpy((buffer + offset), buf, bytes_to_write);
+
+    write_blocks(NUM_BLOCKS - 2, 1, &inode_status_table);
 
     // Write file back to disk
     for (int i = starting_block; i < blocks_needed; i++) {

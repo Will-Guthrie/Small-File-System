@@ -43,10 +43,10 @@ RM = /snap/clion/97/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/will/Desktop/sfs
+CMAKE_SOURCE_DIR = /home/will/Desktop/Small-File-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/will/Desktop/sfs/cmake-build-debug
+CMAKE_BINARY_DIR = /home/will/Desktop/Small-File-System/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/COMP_310_File_System.dir/depend.make
@@ -57,30 +57,60 @@ include CMakeFiles/COMP_310_File_System.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/COMP_310_File_System.dir/flags.make
 
+CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o: CMakeFiles/COMP_310_File_System.dir/flags.make
+CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o: ../disk_emu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o   -c /home/will/Desktop/Small-File-System/disk_emu.c
+
+CMakeFiles/COMP_310_File_System.dir/disk_emu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/COMP_310_File_System.dir/disk_emu.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/will/Desktop/Small-File-System/disk_emu.c > CMakeFiles/COMP_310_File_System.dir/disk_emu.c.i
+
+CMakeFiles/COMP_310_File_System.dir/disk_emu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/COMP_310_File_System.dir/disk_emu.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/Small-File-System/disk_emu.c -o CMakeFiles/COMP_310_File_System.dir/disk_emu.c.s
+
 CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o: CMakeFiles/COMP_310_File_System.dir/flags.make
 CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o: ../sfs_api.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Desktop/sfs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o   -c /home/will/Desktop/sfs/sfs_api.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o   -c /home/will/Desktop/Small-File-System/sfs_api.c
 
 CMakeFiles/COMP_310_File_System.dir/sfs_api.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/COMP_310_File_System.dir/sfs_api.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/will/Desktop/sfs/sfs_api.c > CMakeFiles/COMP_310_File_System.dir/sfs_api.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/will/Desktop/Small-File-System/sfs_api.c > CMakeFiles/COMP_310_File_System.dir/sfs_api.c.i
 
 CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/sfs/sfs_api.c -o CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/Small-File-System/sfs_api.c -o CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s
+
+CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o: CMakeFiles/COMP_310_File_System.dir/flags.make
+CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o: ../sfs_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o   -c /home/will/Desktop/Small-File-System/sfs_test.c
+
+CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/will/Desktop/Small-File-System/sfs_test.c > CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i
+
+CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/Small-File-System/sfs_test.c -o CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s
 
 # Object files for target COMP_310_File_System
 COMP_310_File_System_OBJECTS = \
-"CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o"
+"CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o" \
+"CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o" \
+"CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o"
 
 # External object files for target COMP_310_File_System
 COMP_310_File_System_EXTERNAL_OBJECTS =
 
+COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o
+COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/build.make
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/will/Desktop/sfs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable COMP_310_File_System"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable COMP_310_File_System"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COMP_310_File_System.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -93,6 +123,6 @@ CMakeFiles/COMP_310_File_System.dir/clean:
 .PHONY : CMakeFiles/COMP_310_File_System.dir/clean
 
 CMakeFiles/COMP_310_File_System.dir/depend:
-	cd /home/will/Desktop/sfs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/will/Desktop/sfs /home/will/Desktop/sfs /home/will/Desktop/sfs/cmake-build-debug /home/will/Desktop/sfs/cmake-build-debug /home/will/Desktop/sfs/cmake-build-debug/CMakeFiles/COMP_310_File_System.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/will/Desktop/Small-File-System/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/will/Desktop/Small-File-System /home/will/Desktop/Small-File-System /home/will/Desktop/Small-File-System/cmake-build-debug /home/will/Desktop/Small-File-System/cmake-build-debug /home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles/COMP_310_File_System.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/COMP_310_File_System.dir/depend
 

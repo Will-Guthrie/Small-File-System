@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/will/Desktop/sfs/disk_emu.h
+/home/will/Desktop/Small-File-System/disk_emu.h
 
-/home/will/Desktop/sfs/sfs_api.c
+/home/will/Desktop/Small-File-System/sfs_api.c
 sfs_api.h
-/home/will/Desktop/sfs/sfs_api.h
+/home/will/Desktop/Small-File-System/sfs_api.h
 stdio.h
 -
 stdlib.h
@@ -24,9 +24,9 @@ strings.h
 inttypes.h
 -
 disk_emu.h
-/home/will/Desktop/sfs/disk_emu.h
+/home/will/Desktop/Small-File-System/disk_emu.h
 
-/home/will/Desktop/sfs/sfs_api.h
+/home/will/Desktop/Small-File-System/sfs_api.h
 glob.h
 -
 stdint-gcc.h

@@ -7,6 +7,8 @@
 //TODO: Maybe move this to bottom
 #endif //COMP_310_FILE_SYSTEM_SFS_API_H
 
+#define MAX_FNAME_LENGTH 20
+#define MAXFILENAME 20
 #define MAX_FILENAME_LEN 16
 #define MAX_EXTENSION_LEN 3
 #define NUM_BLOCKS 1024

@@ -48,10 +48,10 @@ RM = /snap/clion/97/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/will/Desktop/sfs
+CMAKE_SOURCE_DIR = /home/will/Desktop/Small-File-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/will/Desktop/sfs/cmake-build-debug
+CMAKE_BINARY_DIR = /home/will/Desktop/Small-File-System/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/will/Desktop/sfs/cmake-build-debug/CMakeFiles /home/will/Desktop/sfs/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles /home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/will/Desktop/sfs/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ COMP_310_File_System/fast:
 	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/build
 .PHONY : COMP_310_File_System/fast
 
+disk_emu.o: disk_emu.c.o
+
+.PHONY : disk_emu.o
+
+# target to build an object file
+disk_emu.c.o:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o
+.PHONY : disk_emu.c.o
+
+disk_emu.i: disk_emu.c.i
+
+.PHONY : disk_emu.i
+
+# target to preprocess a source file
+disk_emu.c.i:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/disk_emu.c.i
+.PHONY : disk_emu.c.i
+
+disk_emu.s: disk_emu.c.s
+
+.PHONY : disk_emu.s
+
+# target to generate assembly for a file
+disk_emu.c.s:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/disk_emu.c.s
+.PHONY : disk_emu.c.s
+
 sfs_api.o: sfs_api.c.o
 
 .PHONY : sfs_api.o
@@ -150,6 +177,33 @@ sfs_api.c.s:
 	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s
 .PHONY : sfs_api.c.s
 
+sfs_test.o: sfs_test.c.o
+
+.PHONY : sfs_test.o
+
+# target to build an object file
+sfs_test.c.o:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o
+.PHONY : sfs_test.c.o
+
+sfs_test.i: sfs_test.c.i
+
+.PHONY : sfs_test.i
+
+# target to preprocess a source file
+sfs_test.c.i:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i
+.PHONY : sfs_test.c.i
+
+sfs_test.s: sfs_test.c.s
+
+.PHONY : sfs_test.s
+
+# target to generate assembly for a file
+sfs_test.c.s:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s
+.PHONY : sfs_test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... COMP_310_File_System"
 	@echo "... edit_cache"
+	@echo "... disk_emu.o"
+	@echo "... disk_emu.i"
+	@echo "... disk_emu.s"
 	@echo "... sfs_api.o"
 	@echo "... sfs_api.i"
 	@echo "... sfs_api.s"
+	@echo "... sfs_test.o"
+	@echo "... sfs_test.i"
+	@echo "... sfs_test.s"
 .PHONY : help
 
 

@@ -23,7 +23,7 @@ static int fuse_getattr(const char *path, struct stat *stbuf)
     if (strcmp(path, "/") == 0) {
         stbuf->st_mode = S_IFDIR | 0755;
         stbuf->st_nlink = 2;
-    } else if((size = sfs_GetFileSize(path)) != -1) {
+    } else if((size = sfs_getfilesize(path)) != -1) {
         stbuf->st_mode = S_IFREG | 0666;
         stbuf->st_nlink = 1;
         stbuf->st_size = size;
@@ -44,7 +44,7 @@ static int fuse_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
     filler(buf, ".", NULL, 0);
     filler(buf, "..", NULL, 0);
 
-    while(sfs_get_next_filename(file_name)) {
+    while(sfs_getnextfilename(file_name)) {
         filler(buf, &file_name[1], NULL, 0);
     }
 
