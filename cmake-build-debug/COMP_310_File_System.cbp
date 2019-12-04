@@ -92,7 +92,7 @@
 		<Unit filename="/home/will/Desktop/Small-File-System/sfs_api.h">
 			<Option target="COMP_310_File_System"/>
 		</Unit>
-		<Unit filename="/home/will/Desktop/Small-File-System/sfs_test.c">
+		<Unit filename="/home/will/Desktop/Small-File-System/sfs_test2.c">
 			<Option target="COMP_310_File_System"/>
 		</Unit>
 		<Unit filename="/home/will/Desktop/Small-File-System/CMakeLists.txt">

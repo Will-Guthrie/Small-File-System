@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/will/Desktop/Small-File-System/disk_emu.c" "/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o"
   "/home/will/Desktop/Small-File-System/sfs_api.c" "/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o"
-  "/home/will/Desktop/Small-File-System/sfs_test.c" "/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o"
+  "/home/will/Desktop/Small-File-System/sfs_test2.c" "/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

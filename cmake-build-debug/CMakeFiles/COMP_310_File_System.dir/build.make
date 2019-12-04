@@ -83,31 +83,31 @@ CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/Small-File-System/sfs_api.c -o CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s
 
-CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o: CMakeFiles/COMP_310_File_System.dir/flags.make
-CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o: ../sfs_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o   -c /home/will/Desktop/Small-File-System/sfs_test.c
+CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o: CMakeFiles/COMP_310_File_System.dir/flags.make
+CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o: ../sfs_test2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o   -c /home/will/Desktop/Small-File-System/sfs_test2.c
 
-CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/will/Desktop/Small-File-System/sfs_test.c > CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i
+CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/will/Desktop/Small-File-System/sfs_test2.c > CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.i
 
-CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/Small-File-System/sfs_test.c -o CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s
+CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/will/Desktop/Small-File-System/sfs_test2.c -o CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.s
 
 # Object files for target COMP_310_File_System
 COMP_310_File_System_OBJECTS = \
 "CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o" \
 "CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o" \
-"CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o"
+"CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o"
 
 # External object files for target COMP_310_File_System
 COMP_310_File_System_EXTERNAL_OBJECTS =
 
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o
-COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o
+COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/build.make
 COMP_310_File_System: CMakeFiles/COMP_310_File_System.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/will/Desktop/Small-File-System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable COMP_310_File_System"

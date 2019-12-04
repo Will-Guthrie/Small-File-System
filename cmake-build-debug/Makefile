@@ -177,32 +177,32 @@ sfs_api.c.s:
 	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_api.c.s
 .PHONY : sfs_api.c.s
 
-sfs_test.o: sfs_test.c.o
+sfs_test2.o: sfs_test2.c.o
 
-.PHONY : sfs_test.o
+.PHONY : sfs_test2.o
 
 # target to build an object file
-sfs_test.c.o:
-	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o
-.PHONY : sfs_test.c.o
+sfs_test2.c.o:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o
+.PHONY : sfs_test2.c.o
 
-sfs_test.i: sfs_test.c.i
+sfs_test2.i: sfs_test2.c.i
 
-.PHONY : sfs_test.i
+.PHONY : sfs_test2.i
 
 # target to preprocess a source file
-sfs_test.c.i:
-	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test.c.i
-.PHONY : sfs_test.c.i
+sfs_test2.c.i:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.i
+.PHONY : sfs_test2.c.i
 
-sfs_test.s: sfs_test.c.s
+sfs_test2.s: sfs_test2.c.s
 
-.PHONY : sfs_test.s
+.PHONY : sfs_test2.s
 
 # target to generate assembly for a file
-sfs_test.c.s:
-	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test.c.s
-.PHONY : sfs_test.c.s
+sfs_test2.c.s:
+	$(MAKE) -f CMakeFiles/COMP_310_File_System.dir/build.make CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.s
+.PHONY : sfs_test2.c.s
 
 # Help Target
 help:
@@ -219,9 +219,9 @@ help:
 	@echo "... sfs_api.o"
 	@echo "... sfs_api.i"
 	@echo "... sfs_api.s"
-	@echo "... sfs_test.o"
-	@echo "... sfs_test.i"
-	@echo "... sfs_test.s"
+	@echo "... sfs_test2.o"
+	@echo "... sfs_test2.i"
+	@echo "... sfs_test2.s"
 .PHONY : help
 
 

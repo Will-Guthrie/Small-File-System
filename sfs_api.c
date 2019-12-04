@@ -260,6 +260,18 @@ int sfs_fopen(char *name) {
         return -1;
     }
 
+    int letter = 0;
+    while (name[letter] != '\0') {
+        if (letter >= MAX_FILENAME_LEN + MAX_EXTENSION_LEN + 1) {
+            break;
+        }
+        if (letter < MAX_EXTENSION_LEN) {
+
+        }
+
+        letter++;
+    }
+
     int first_open_file_desc = -1;
     for (int i = 0; i < NUM_INODES; i++) {
         if (fd_table[i].inode_index == -1) {
@@ -582,6 +594,12 @@ int sfs_fread(int fileID, char *buf, int length) {
 
 int sfs_remove(char *file) {
     int inode_to_remove = get_file_inode(file);
+
+    // If file in file descriptor table, do not remove it
+    for (int i = 0; i < NUM_INODES; i++) {
+        if (fd_table[i].inode_index == inode_to_remove) {return -1;}
+    }
+
     if (inode_to_remove > 0) {
 
         // Free all data blocks

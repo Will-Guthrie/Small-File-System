@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/COMP_310_File_System.dir/disk_emu.c.o"
   "CMakeFiles/COMP_310_File_System.dir/sfs_api.c.o"
-  "CMakeFiles/COMP_310_File_System.dir/sfs_test.c.o"
+  "CMakeFiles/COMP_310_File_System.dir/sfs_test2.c.o"
   "COMP_310_File_System"
   "COMP_310_File_System.pdb"
 )
